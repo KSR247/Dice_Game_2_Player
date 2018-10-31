@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #1d0bee, #005fff, #0086ff, #00a5f5, #1bbfe1);
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 100px;
+    font-size: 100px;
+    text-shadow: 5px 2px 2px white;
+}
+
+.mainPage {
+    top: 100px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    border: 5px white solid;
+}
+
+.player {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.playerScore {
+    margin-top: 150px;
+}
+
+.playerCurrent {
+    margin-top: 95px;
+    background: white;
+
+}
+
+.DiceImg {
+    padding-top: 55px;
+}
+
+button {
+    color: black;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu {
+    font-size: 200px;
+    padding-top: 20px;
+}
+
+.newGame, .holdScore, .rollDice {
+    font-size: 25px;
+}
+
+.newGame:hover, .holdScore:hover, .rollDice:hover {
+    transform: scale(1.3);
+} 
