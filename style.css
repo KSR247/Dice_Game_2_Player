@@ -20,7 +20,6 @@ h1 {
 }
 
 .mainPage {
-    top: 100px;
     display: flex;
     flex: 1;
     align-items: center;
@@ -31,21 +30,43 @@ h1 {
 .wrapper {
     display: flex;
     border: 5px white solid;
+    width: 1000px;
 }
 
-.player {
-    font-size: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+.playerName {
+    font-size: 20px;
+    margin-top: 10px;
+
 }
 
-.playerScore {
+.player-0{
+    width: 350px;
+}
+
+.player-1 {
+    width: 350px;
+}
+
+
+.player-0:hover {
+    background: red;
+}
+
+.player-1:hover   { 
+    background: yellow;
+}
+
+.playerScore_0, .playerScore_1 {
     margin-top: 150px;
 }
 
 .playerCurrent {
-    margin-top: 95px;
+    justify-content: center;
+    margin-top: 120px;
     background: white;
+    height: 100px;;
+    width: 150px;
+    margin-left: 100px;
 
 }
 
@@ -63,9 +84,31 @@ button {
     cursor: pointer;
 }
 
+
+.diceImg {
+        margin-top: 100px;
+        margin-left: 70px;
+        height: 160px;
+        width: 160px;
+        padding: 0;
+        background-color: white;
+        text-align: center;
+        border: 5px black solid;
+}
+
 .menu {
-    font-size: 200px;
     padding-top: 20px;
+    background: hidden;
+    border: none;
+    width: 300px;
+}
+
+.play {
+    padding-top: 80px;
+}
+
+.holdScore {
+    padding-top: 15px;
 }
 
 .newGame, .holdScore, .rollDice {
