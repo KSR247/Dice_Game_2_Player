@@ -39,6 +39,8 @@ function init() {
         document.getElementById('name_1').textContent = 'Player 2';
         document.getElementById('roll').style.display = 'block'
         document.getElementById('hold').style.display = 'block'
+        document.getElementById('player_0').style.background = 'red'
+        document.getElementById('player_1').style.background = 'none'
         
     })
 }
