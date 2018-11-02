@@ -29,7 +29,7 @@ h1 {
 
 .wrapper {
     display: flex;
-    border: 5px white solid;
+    border: 10px black solid;
     width: 1000px;
 }
 
@@ -48,14 +48,6 @@ h1 {
 }
 
 
-.player-0:hover {
-    background: red;
-}
-
-.player-1:hover   { 
-    background: yellow;
-}
-
 .playerScore_0, .playerScore_1 {
     margin-top: 150px;
 }
@@ -63,7 +55,7 @@ h1 {
 .playerCurrent {
     justify-content: center;
     margin-top: 120px;
-    background: white;
+    background: #f1e315;
     height: 100px;;
     width: 150px;
     margin-left: 100px;
@@ -81,6 +73,7 @@ button {
     font-family: Lato;
     font-size: 20px;
     text-transform: uppercase;
+    box-decoration-break: 
     cursor: pointer;
 }
 

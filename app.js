@@ -18,7 +18,7 @@ let activePlayer = 0;
 
 let lastDice = 0;
 
-document.getElementById('player_0').style.background = 'red'
+document.getElementById('player_0').style.border = '15px dashed #EC2128'
 
 //------------ NEW GAME BUTTON RESETS EVERTHING USING INIT() FUNCTION ----------------
 
@@ -35,12 +35,12 @@ function init() {
         document.getElementById('current_Score_0').textContent = '0'; 
         document.getElementById('current_Score_1').textContent = '0';
         document.getElementById("diceImg").src = "";
-        document.getElementById('name_0').textContent = 'Player 1';
-        document.getElementById('name_1').textContent = 'Player 2';
-        document.getElementById('roll').style.display = 'block'
-        document.getElementById('hold').style.display = 'block'
-        document.getElementById('player_0').style.background = 'red'
-        document.getElementById('player_1').style.background = 'none'
+        document.getElementById('name_0').style.textContent = 'Player 1';
+        document.getElementById('name_1').style.textContent = 'Player 2';
+        document.getElementById('roll').display = 'block'
+        document.getElementById('hold').display = 'block'
+        document.getElementById('player_0').style.border = '15px dashed #EC2128'
+        document.getElementById('player_1').style.border = 'none'
         
     })
 }
@@ -79,12 +79,12 @@ function nextPlayer() {
     document.getElementById('current_Score_1').textContent = '0';
 
     if (activePlayer == 0){
-        document.getElementById('player_0').style.background = 'red'
-        document.getElementById('player_1').style.background = 'none'
+        document.getElementById('player_0').style.border = '15px dashed #EC2128'
+        document.getElementById('player_1').style.border = 'none'
 
     } else {
-        document.getElementById('player_1').style.background = 'yellow'
-        document.getElementById('player_0').style.background = 'none'
+        document.getElementById('player_1').style.border = '15px dashed #7DE28E'
+        document.getElementById('player_0').style.border = 'none'
     }
   
   }
